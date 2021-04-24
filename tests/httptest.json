@@ -1,0 +1,14 @@
+{
+	"name": "httptest-test",
+	"author": "alessiorubicini",
+	"description": "Testing this new library!",
+	"requests": [
+		{
+			"url": "http://antonserver.ddns.net:8080/",
+			"method": "GET",
+			"headers": {
+				"APIKEY": "test"
+			}
+		}
+	]
+}
