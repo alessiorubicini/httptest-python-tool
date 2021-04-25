@@ -1,7 +1,13 @@
 
 <h1>httptest</h1>
 
->*httptest* is a Python module that automates HTTP requests for testing web APIs inside softwares, like unit testing!
+>*httptest* is a Python command-line tool that automates HTTP requests for testing web APIs inside softwares, like unit testing!
+
+<div align="center">
+	<img  src=".github/terminal-example.png">
+</div>
+
+For documentation check the [documentation.md](documentation.md) file
 
 # Table of contents
 
@@ -12,7 +18,6 @@
 
 
 # Installation
-
 
 
 

@@ -1,14 +1,30 @@
 {
-	"name": "httptest-test",
-	"author": "alessiorubicini",
-	"description": "Testing this new library!",
+	"package": {
+		"name": "httptest-test",
+		"author": "alessiorubicini",
+		"description": "Testing this new library!"
+	},
 	"requests": [
 		{
+			"title": "Anton test",
 			"url": "http://antonserver.ddns.net:8080/",
 			"method": "GET",
 			"headers": {
 				"APIKEY": "test"
-			}
+			},
+			"expected-status": 200
+		},
+		{
+			"title": "POST test",
+			"url": "https://httpbin.org/post",
+			"method": "POST",
+			"headers": {
+				"APIKEY": "test"
+			},
+			"body": {
+				"name": "Alessio"
+			},
+			"expected-status": 200
 		}
 	]
 }
