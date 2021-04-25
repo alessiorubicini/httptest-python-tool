@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+
 # run.py
 # Copyright (c) 2021 Alessio Rubicini
 # This code is licensed under MIT license (see LICENSE for details)
@@ -17,6 +18,24 @@ if "-h" in sys.argv or "--help" in sys.argv:
 	parser.print_help()
 
 
+# Create config file
+if "init" in sys.argv:
+	with open("../tests/httptest.json", "w+") as config:
+		config.write("""
+			{
+				"package": {
+					"name": "package-name",
+					"author": "author",
+					"description": "package-description",
+				},
+				"requests": [
+
+				]
+			}
+		""")
+
+
 # Run requests
 if "run" in sys.argv:
 	executor.runRequests()
+
